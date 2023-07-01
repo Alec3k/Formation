@@ -133,4 +133,46 @@ a:hover {
     transform: translateY(-7) rotate(-45deg);
 }
 
-// MAIN -------------------------------------------
+// FOOTER -------------------------------------------
+footer {
+    background-color: gainsboro;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.line-footer {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0px 20px 0px;
+}
+
+.networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .networks-copyright {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+i {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+i:hover {
+    color: rgb(255, 184, 176);
+}

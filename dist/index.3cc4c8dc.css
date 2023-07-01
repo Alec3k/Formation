@@ -126,4 +126,47 @@ a:hover {
   transform: translateY(-7px)rotate(-45deg);
 }
 
+footer {
+  background-color: #dcdcdc;
+  font-family: Roboto Mono, monospace;
+}
+
+.line-footer {
+  background-color: #000;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.networks {
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.copyright {
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 12px;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .networks-copyright {
+    justify-content: space-between;
+    margin: 0 20px;
+    display: flex;
+  }
+}
+
+i {
+  font-size: 20px;
+  transition: all .2s;
+}
+
+i:hover {
+  color: #ffb8b0;
+}
+
 /*# sourceMappingURL=index.3cc4c8dc.css.map */
