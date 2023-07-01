@@ -1,3 +1,136 @@
-body {
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
 }
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+// BARRE DE NAVIGATION -------------------------------------------
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 184, 176);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgba(247, 247, 247, 0.455);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    transition: 1s;
+}
+
+@media (min-width: 768px) {
+    nav {
+        top: 0;
+        position: relative;
+        background-color: transparent;
+        transition: none;
+    }
+}
+
+.nav-active {
+    top: 0;
+}
+
+ul {
+    padding: 30px 0px 30px 0px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    ul {
+        padding: 20px 0px 0px 20px;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.line-separation {
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0px 10px 0px;
+    transition: 2s;
+}
+
+@media (min-width: 768px) {
+    .line-separation {
+        display: none;
+    }
+}
+
+.line-separation-active {
+    width: 50%;
+    transition-delay: 1s;
+}
+
+// MENU BURGER -------------------------------------------
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    z-index: 1;
+    position: relative;
+    padding: 20px 20px 0px 0px;
+}
+
+@media (min-width: 768px) {
+    .menu-burger {
+       display: none;
+    }
+}
+
+.burger-line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+// TRANSITION DELAY TOP ET DOWN LINE -------------------------------------------
+.top-line {
+    transition-delay: 0.4s;
+}
+
+.down-line {
+    transition-delay: 0.4s;
+}
+
+// ANNIMATION BURGER LINE -------------------------------------------
+.top-line-active {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.middle-line-active {
+    transform: scaleX(0);
+}
+
+.down-line-active {
+    transform: translateY(-7) rotate(-45deg);
+}
+
+// MAIN -------------------------------------------
