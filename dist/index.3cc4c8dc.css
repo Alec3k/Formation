@@ -128,14 +128,17 @@ a:hover {
 
 footer {
   background-color: #dcdcdc;
+  width: 100%;
   font-family: Roboto Mono, monospace;
+  position: fixed;
+  bottom: 0;
 }
 
 .line-footer {
   background-color: #000;
   width: 100%;
   height: 1px;
-  margin: 20px 0;
+  margin: 0 0 20px;
 }
 
 .networks {
