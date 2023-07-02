@@ -4,7 +4,7 @@ const users = [
       firstname: 'John',
       lastname: 'Doe',
       img: {
-        src: 'https://example.com/user1.jpg',
+        src: './images/users/John.jpeg',
         alt: 'John Doe'
       }
     },
@@ -13,7 +13,7 @@ const users = [
       firstname: 'Jane',
       lastname: 'Smith',
       img: {
-        src: 'https://example.com/user2.jpg',
+        src: './images/users/Jane.jpeg',
         alt: 'Jane Smith'
       }
     },
@@ -22,7 +22,7 @@ const users = [
       firstname: 'Mike',
       lastname: 'Johnson',
       img: {
-        src: 'https://example.com/user3.jpg',
+        src: './images/users/Mike.jpeg',
         alt: 'Mike Johnson'
       }
     },
@@ -31,7 +31,7 @@ const users = [
       firstname: 'Emily',
       lastname: 'Brown',
       img: {
-        src: 'https://example.com/user4.jpg',
+        src: './images/users/Emily.jpeg',
         alt: 'Emily Brown'
       }
     },
@@ -40,7 +40,7 @@ const users = [
       firstname: 'Alex',
       lastname: 'Wilson',
       img: {
-        src: 'https://example.com/user5.jpg',
+        src: './images/users/Alex.jpeg',
         alt: 'Alex Wilson'
       }
     }
