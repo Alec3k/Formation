@@ -1,0 +1,103 @@
+.title-contact {
+  color: #000;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 25px;
+  text-decoration: underline;
+  display: flex;
+}
+
+.para-contact {
+  text-align: center;
+  justify-content: center;
+  margin: 20px 20px 0;
+  display: flex;
+}
+
+.formulaire {
+  margin: 20px;
+}
+
+@media (width >= 768px) {
+  .formulaire .left-right-form {
+    gap: 50px;
+    margin: 0 100px;
+    display: flex;
+  }
+}
+
+.formulaire .left-right-form .left-form {
+  flex-direction: column;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .formulaire .left-right-form .left-form {
+    width: 50%;
+  }
+}
+
+.formulaire .left-right-form .left-form label {
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.formulaire .left-right-form .left-form input {
+  text-indent: 10px;
+  background-color: #ececec;
+  border: 1px solid #000;
+  border-radius: 50px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.formulaire .left-right-form .left-form input:focus {
+  outline: none;
+}
+
+@media (width >= 768px) {
+  .formulaire .left-right-form .right-form {
+    width: 50%;
+  }
+}
+
+.formulaire .left-right-form .right-form textarea {
+  text-indent: 10px;
+  background-color: #ececec;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (width >= 768px) {
+  .formulaire .left-right-form .right-form textarea {
+    width: 100%;
+  }
+}
+
+.formulaire .left-right-form .right-form textarea:focus {
+  outline: none;
+}
+
+.formulaire .submit {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  width: 150px;
+  height: 35px;
+  margin-top: 20px;
+  transition: all .2s;
+}
+
+@media (width >= 768px) {
+  .formulaire .submit {
+    margin: 5px 0 0 100px;
+  }
+}
+
+.formulaire .submit:hover {
+  color: #000;
+  background-color: orange;
+}
+
+/*# sourceMappingURL=contact.9eb1e191.css.map */

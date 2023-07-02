@@ -16,86 +16,83 @@
 
 .formulaire {
     margin: 20px;
-}
 
-.left-form {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: 768px) {
-        width: 50%;
-    }
-}
-
-@media (min-width: 768px) {
     .left-right-form {
-        display: flex;
-        gap: 50px;
-        margin: 0px 100px 0px 100px;
+        @media (min-width: 768px) {
+            display: flex;
+            gap: 50px;
+            margin: 0px 100px 0px 100px;
+        }
+
+        .left-form {
+            display: flex;
+            flex-direction: column;
+        
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+
+            label {
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 5px;
+            }
+
+            input {
+                border-radius: 50px;
+                border: 1px solid black;
+                margin-bottom: 20px;
+                height: 25px;
+                text-indent: 10px;
+                background-color: rgb(236, 236, 236);
+            
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .right-form {
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+
+            textarea {
+                border-radius: 10px;
+                text-indent: 10px;
+                width: 100%;
+                background-color: rgb(236, 236, 236);
+            
+                @media (min-width: 768px) {
+                    width: 100%;
+                }
+            
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .submit {
+        margin-top: 20px;
+        width: 150px;
+        height: 35px;
+        background-color: black;
+        color: white;
+        border: none;
+        transition: 0.2s;
+    
+        @media (min-width: 768px) {
+            margin: 5px 0px 0px 100px;
+        }
+    
+        &:hover {
+            background-color: orange;
+            color: black;
+        }
     }
 }
 
-label {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 5px;
-}
 
-input {
-    border-radius: 50px;
-    border: 1px solid black;
-    margin-bottom: 20px;
-    height: 25px;
-    text-indent: 10px;
-    background-color: rgb(236, 236, 236);
 
-    &:focus {
-        outline: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .right-form {
-        width: 50%;
-    }
-}
-
-textarea {
-    border-radius: 10px;
-    text-indent: 10px;
-    width: 100%;
-    background-color: rgb(236, 236, 236);
-
-    @media (min-width: 768px) {
-        width: 100%;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.submit {
-    margin-top: 20px;
-    width: 150px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    border: none;
-    transition: 0.2s;
-
-    @media (min-width: 768px) {
-        margin: 5px 0px 0px 100px;
-    }
-
-    &:hover {
-        background-color: orange;
-        color: black;
-    }
-} 
-
-footer {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-}
