@@ -1,0 +1,107 @@
+.title-contact {
+  color: #000;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 25px;
+  text-decoration: underline;
+  display: flex;
+}
+
+.para-contact {
+  text-align: center;
+  justify-content: center;
+  margin: 20px 20px 0;
+  display: flex;
+}
+
+.formulaire {
+  margin: 20px;
+}
+
+.left-form {
+  flex-direction: column;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .left-form {
+    width: 50%;
+  }
+
+  .left-right-form {
+    gap: 50px;
+    margin: 0 100px;
+    display: flex;
+  }
+}
+
+label {
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+input {
+  text-indent: 10px;
+  background-color: #ececec;
+  border: 1px solid #000;
+  border-radius: 50px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (width >= 768px) {
+  .right-form {
+    width: 50%;
+  }
+}
+
+textarea {
+  text-indent: 10px;
+  background-color: #ececec;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (width >= 768px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.submit {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  width: 150px;
+  height: 35px;
+  margin-top: 20px;
+  transition: all .2s;
+}
+
+@media (width >= 768px) {
+  .submit {
+    margin: 5px 0 0 100px;
+  }
+}
+
+.submit:hover {
+  color: #000;
+  background-color: orange;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=contact.9eb1e191.css.map */

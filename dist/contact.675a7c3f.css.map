@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["styles/components/global.scss"],"sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    color: black;\n    font-family: 'Roboto Mono', monospace;\n}"],"names":[],"version":3,"file":"contact.675a7c3f.css.map","sourceRoot":"/__parcel_source_root/"}

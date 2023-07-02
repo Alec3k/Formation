@@ -1,0 +1,80 @@
+.hero-section {
+  background-image: url("../burger-hero-section.49c483be.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+}
+
+@media (width >= 768px) {
+  .hero-section {
+    height: 930px;
+  }
+}
+
+.title-hero-section {
+  color: #fff;
+  margin: 0 20px;
+  font-size: 21px;
+  text-decoration: underline;
+}
+
+@media (width >= 768px) {
+  .title-hero-section {
+    padding: 0 30px;
+    font-size: 35px;
+  }
+}
+
+.para-hero-section {
+  color: #fff;
+  margin: 0 20px;
+  font-size: 13px;
+}
+
+@media (width >= 768px) {
+  .para-hero-section {
+    padding: 0 30px;
+    font-size: 35px;
+  }
+}
+
+.button-decouvrir-hero-section {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  width: 30%;
+  height: 40px;
+  margin-top: 20px;
+  transition: all .3s;
+}
+
+@media (width >= 768px) {
+  .button-decouvrir-hero-section {
+    width: 250px;
+    font-size: 30px;
+  }
+}
+
+.button-decouvrir-hero-section:hover {
+  background-color: orange;
+}
+
+.button-title-hero-section {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50%;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .button-title-hero-section {
+    gap: 40px;
+    padding-top: 200px;
+  }
+}
+
+/*# sourceMappingURL=index.3cc4c8dc.css.map */
