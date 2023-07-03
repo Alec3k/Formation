@@ -39,7 +39,6 @@
 
 .formulaire .left-right-form .left-form label {
   justify-content: flex-start;
-  margin-bottom: 5px;
   display: flex;
 }
 
@@ -83,6 +82,7 @@
   color: #fff;
   background-color: #000;
   border: none;
+  border-radius: 50px;
   width: 150px;
   height: 35px;
   margin-top: 20px;

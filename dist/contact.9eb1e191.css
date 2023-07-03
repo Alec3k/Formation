@@ -18,30 +18,31 @@
   margin: 20px;
 }
 
-.left-form {
-  flex-direction: column;
-  display: flex;
-}
-
 @media (width >= 768px) {
-  .left-form {
-    width: 50%;
-  }
-
-  .left-right-form {
+  .formulaire .left-right-form {
     gap: 50px;
     margin: 0 100px;
     display: flex;
   }
 }
 
-label {
-  justify-content: flex-start;
-  margin-bottom: 5px;
+.formulaire .left-right-form .left-form {
+  flex-direction: column;
   display: flex;
 }
 
-input {
+@media (width >= 768px) {
+  .formulaire .left-right-form .left-form {
+    width: 50%;
+  }
+}
+
+.formulaire .left-right-form .left-form label {
+  justify-content: flex-start;
+  display: flex;
+}
+
+.formulaire .left-right-form .left-form input {
   text-indent: 10px;
   background-color: #ececec;
   border: 1px solid #000;
@@ -50,17 +51,17 @@ input {
   margin-bottom: 20px;
 }
 
-input:focus {
+.formulaire .left-right-form .left-form input:focus {
   outline: none;
 }
 
 @media (width >= 768px) {
-  .right-form {
+  .formulaire .left-right-form .right-form {
     width: 50%;
   }
 }
 
-textarea {
+.formulaire .left-right-form .right-form textarea {
   text-indent: 10px;
   background-color: #ececec;
   border-radius: 10px;
@@ -68,19 +69,20 @@ textarea {
 }
 
 @media (width >= 768px) {
-  textarea {
+  .formulaire .left-right-form .right-form textarea {
     width: 100%;
   }
 }
 
-textarea:focus {
+.formulaire .left-right-form .right-form textarea:focus {
   outline: none;
 }
 
-.submit {
+.formulaire .submit {
   color: #fff;
   background-color: #000;
   border: none;
+  border-radius: 50px;
   width: 150px;
   height: 35px;
   margin-top: 20px;
@@ -88,12 +90,12 @@ textarea:focus {
 }
 
 @media (width >= 768px) {
-  .submit {
+  .formulaire .submit {
     margin: 5px 0 0 100px;
   }
 }
 
-.submit:hover {
+.formulaire .submit:hover {
   color: #000;
   background-color: orange;
 }

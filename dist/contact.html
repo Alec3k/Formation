@@ -32,21 +32,22 @@
         <main>
             <h1 class="title-contact">Formulaire de Contact</h1>
             <p class="para-contact">Êtes-vous à la recherche d'une expérience exceptionnelle et d'une solution sur mesure ? Ne cherchez plus ! En me contactant, vous bénéficierez d'un service personnalisé et d'une expertise inégalée dans votre domaine d'intérêt. Que vous ayez besoin d'aide pour réaliser un projet, obtenir des conseils professionnels ou simplement discuter de vos idées, je suis là pour vous.</p>
-            <form class="formulaire">
+            <form class="formulaire" id="my-form">
+                <div id="error"></div>
                 <div class="left-right-form">
                     <div class="left-form">
                         <label for="">First Name :</label>
-                        <input class="input-categorie first-name" type="text">
+                        <input class="input-categorie" type="text" id="first-name">
         
                         <label for="">Last Name :</label>
-                        <input class="input-categorie last-name" type="text">
+                        <input class="input-categorie" type="text" id="last-name">
         
                         <label for="">E-mail :</label>
-                        <input class="input-categorie email" type="text">
+                        <input class="input-categorie" type="text" id="email">
                     </div>
                     <div class="right-form">
                         <label for="">Message :</label>
-                        <textarea class="input-categorie message" cols="30" rows="10"></textarea>
+                        <textarea class="input-categorie " cols="30" rows="10" id="message"></textarea>
                     </div>
                 </div>
                 <input class="submit" type="submit">

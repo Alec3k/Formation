@@ -35,7 +35,6 @@
             label {
                 display: flex;
                 justify-content: flex-start;
-                margin-bottom: 5px;
             }
 
             input {
@@ -81,6 +80,7 @@
         background-color: black;
         color: white;
         border: none;
+        border-radius: 50px;
         transition: 0.2s;
     
         @media (min-width: 768px) {

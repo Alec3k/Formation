@@ -13,7 +13,23 @@
   }
 }
 
-.title-hero-section {
+.hero-section .button-title-hero-section {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50%;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .hero-section .button-title-hero-section {
+    gap: 40px;
+    padding-top: 200px;
+  }
+}
+
+.hero-section .button-title-hero-section .title-hero-section {
   color: #fff;
   margin: 0 20px;
   font-size: 21px;
@@ -21,26 +37,26 @@
 }
 
 @media (width >= 768px) {
-  .title-hero-section {
+  .hero-section .button-title-hero-section .title-hero-section {
     padding: 0 30px;
     font-size: 35px;
   }
 }
 
-.para-hero-section {
+.hero-section .button-title-hero-section .para-hero-section {
   color: #fff;
   margin: 0 20px;
   font-size: 13px;
 }
 
 @media (width >= 768px) {
-  .para-hero-section {
+  .hero-section .button-title-hero-section .para-hero-section {
     padding: 0 30px;
     font-size: 35px;
   }
 }
 
-.button-decouvrir-hero-section {
+.hero-section .button-title-hero-section .button-decouvrir-hero-section {
   background-color: #fff;
   border: none;
   border-radius: 20px;
@@ -52,30 +68,14 @@
 }
 
 @media (width >= 768px) {
-  .button-decouvrir-hero-section {
+  .hero-section .button-title-hero-section .button-decouvrir-hero-section {
     width: 250px;
     font-size: 30px;
   }
 }
 
-.button-decouvrir-hero-section:hover {
+.hero-section .button-title-hero-section .button-decouvrir-hero-section:hover {
   background-color: orange;
-}
-
-.button-title-hero-section {
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  padding-top: 50%;
-  display: flex;
-}
-
-@media (width >= 768px) {
-  .button-title-hero-section {
-    gap: 40px;
-    padding-top: 200px;
-  }
 }
 
 /*# sourceMappingURL=index.3cc4c8dc.css.map */
