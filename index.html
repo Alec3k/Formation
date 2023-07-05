@@ -5,10 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="styles/main.scss">
-        <link rel="stylesheet" href="styles/components/navbar.scss">
-        <link rel="stylesheet" href="styles/components/footer.scss">
-        <link rel="stylesheet" href="styles/components/global.scss">
-        <link rel="stylesheet" href="styles/components/users-main.scss">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
@@ -16,31 +12,42 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <div class="line-separation"></div>
-                    <li><a href="./contact/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-burger">
-                <div class="burger-line top-line"></div>
-                <div class="burger-line middle-line"></div>
-                <div class="burger-line down-line"></div>
+            <div class="title-plus-section">
+                <div class="title-page-desktop">
+                    <h2 class="title-hero-section-desktop">ParadiseBurger</h2>
+                </div>
+                <nav>  
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./contact/contact.html">Contact</a></li>
+                        <div class="line-separation"></div>
+                        <li><a href="#" onclick="smoothScroll('#users')">Users</a></li>
+                        <li><a href="#">Projets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="title-plus-menu">
+                <div class="title-page-mobile">
+                    <h2 class="title-hero-section-mobile">ParadiseBurger</h2>
+                </div>
+                <div class="menu-burger">
+                    <div class="burger-line top-line"></div>
+                    <div class="burger-line middle-line"></div>
+                    <div class="burger-line down-line"></div>
+                </div>
             </div>
             <div class="line"></div>
         </header>
         <main>
             <div class="hero-section">
                 <div class="button-title-hero-section">
-                    <h2 class="title-hero-section">Le Paradis du Burger</h2>
-                    <p class="para-hero-section">Bienvenue au Paradis du Burger ! Savourez nos délicieux hamburgers, accompagnés de frites croustillantes et de milkshakes onctueux. Un véritable régal pour les amateurs de burgers.</p>
+                    <p class="para-hero-section">Découvrez le Paradis du Burger, où chaque bouchée est une expérience délicieuse. Notre menu varié propose des hamburgers de qualité supérieure, préparés avec soin et garnis d'ingrédients alléchants. Accompagnez votre burger de frites croustillantes et savourez nos milkshakes onctueux. Rejoignez-nous pour une expérience gustative inoubliable au Paradis du Burger.</p>
                     <button class="button-decouvrir-hero-section">Découvrir</button>
                 </div>
             </div>
             <div class="line-separation-hero"></div>
             <h2 class="users-title">Users</h2>
-            <div class="users">
+            <div id="users" class="users">
                 <div class="users-plus-image">
                     <div class="pp-users">
                         <img class="image-users" id="John" src="./images/users/John.jpeg" alt="John">
