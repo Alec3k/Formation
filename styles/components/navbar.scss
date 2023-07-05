@@ -4,6 +4,7 @@ header {
     background-color: orange;
 
     .title-plus-section {
+        position: relative;
 
         @media (min-width: 768px) {
             display: flex;
@@ -19,8 +20,6 @@ header {
                 display: flex;
             }
         }
-        
-        
 
         .title-hero-section-desktop {
             font-size: 20px;
@@ -35,9 +34,12 @@ header {
             transition: 0.5s;
         
             @media (min-width: 768px) {
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 15px;
                 width: auto;
                 top: 0;
-                position: relative;
+                position: absolute;
                 background-color: transparent;
                 transition: none;
             }
@@ -123,8 +125,6 @@ header {
         }
     }
 }
-
-
 
 // MENU BURGER -------------------------------------------
 .menu-burger {
