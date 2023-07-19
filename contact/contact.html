@@ -11,6 +11,7 @@
         <script src="https://kit.fontawesome.com/ce3d6979f7.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div id="mouse-follower"></div>
         <header>
             <div class="title-plus-section">
                 <div class="title-page-desktop">
@@ -42,21 +43,30 @@
             <h1 class="title-contact">Formulaire de Contact</h1>
             <p class="para-contact">Êtes-vous à la recherche d'une expérience exceptionnelle et d'une solution sur mesure ? Ne cherchez plus ! En me contactant, vous bénéficierez d'un service personnalisé et d'une expertise inégalée dans votre domaine d'intérêt. Que vous ayez besoin d'aide pour réaliser un projet, obtenir des conseils professionnels ou simplement discuter de vos idées, je suis là pour vous.</p>
             <form class="formulaire" id="my-form">
-                <div id="error"></div>
                 <div class="left-right-form">
                     <div class="left-form">
-                        <label for="">First Name :</label>
-                        <input class="input-categorie" type="text" id="first-name">
+                        <div class="first-name-div">
+                            <label for="">First Name :</label>
+                            <input class="input-categorie" type="text" id="first-name">
+                            <div id="error-first"></div>
+                        </div>
         
-                        <label for="">Last Name :</label>
-                        <input class="input-categorie" type="text" id="last-name">
+                        <div class="last-name-div">
+                            <label for="">Last Name :</label>
+                            <input class="input-categorie" type="text" id="last-name">
+                            <div id="error-last"></div>
+                        </div>
         
-                        <label for="">E-mail :</label>
-                        <input class="input-categorie" type="text" id="email">
+                        <div class="mail-div">
+                            <label for="">E-mail :</label>
+                            <input class="input-categorie" type="text" id="email">
+                            <div id="error-mail"></div>
+                        </div>
                     </div>
                     <div class="right-form">
                         <label for="">Message :</label>
                         <textarea class="input-categorie " cols="30" rows="10" id="message"></textarea>
+                        <div id="error-message"></div>
                     </div>
                 </div>
                 <input class="submit" type="submit">
@@ -74,6 +84,7 @@
                 <p class="copyright">© The Diamond - Tout droits réservés - 2023</p>
             </div>
         </footer>
+        <script src="../mouse-follower.js"></script>
         <script src="../contact.js"></script>
         <script src="../global.js"></script>
     </body>
