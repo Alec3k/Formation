@@ -9,6 +9,9 @@ myFormulaire.addEventListener('submit', (e) => {
     if (inputFirst.value === '') {
         messages.push('Le premier prénom est requis');
     }
+    if (inputFirst.value.trim().length < 3) { // Vérifie si le prénom a moins de 3 caractères (ignorant les espaces)
+        messages.push('Le premier prénom doit contenir au moins 3 caractères');
+    }
     if (messages.length > 0) {
         e.preventDefault();
         errorMessageFirst.innerText = messages.join(', ');
@@ -24,6 +27,9 @@ myFormulaire.addEventListener('submit', (e) => {
     let messages = [];
     if (inputLast.value === '') {
         messages.push('Le deuxième prénom est requis');
+    }
+    if (inputLast.value.trim().length < 3) { // Vérifie si le prénom a moins de 3 caractères (ignorant les espaces)
+        messages.push('Le deuxième prénom doit contenir au moins 3 caractères');
     }
     if (messages.length > 0) {
         e.preventDefault();
@@ -41,6 +47,9 @@ myFormulaire.addEventListener('submit', (e) => {
     if (inputMail.value === '') {
         messages.push('Le mail est requis');
     }
+    if (!inputMail.value.includes('@.')) {
+        messages.push('L\'adresse e-mail doit contenir un @ et un .');
+    }
     if (messages.length > 0) {
         e.preventDefault();
         errorMessageMail.innerText = messages.join(', ');
@@ -56,6 +65,9 @@ myFormulaire.addEventListener('submit', (e) => {
     let messages = [];
     if (inputMessage.value === '') {
         messages.push('Le message est requis');
+    }
+    if (inputMessage.value.trim().length < 10) { // Vérifie si le prénom a moins de 3 caractères (ignorant les espaces)
+        messages.push('Le message doit contenir au moins 10 caractères');
     }
     if (messages.length > 0) {
         e.preventDefault();
